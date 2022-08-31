@@ -15,30 +15,30 @@
 		$this->versions_jar  = "{$this->root}\\.minecraft\\versions\\{$this->versions}\\{$this->versions}.jar";
 		$this->versions_json = "{$this->root}\\.minecraft\\versions\\{$this->versions}\\{$this->versions}.json";
 		$this->cmd           = "{$java} -Xmn{$xmn}m -Xmx{$xmx}m";
-        $this->cmd          .= ' -XX:+UnlockExperimentalVMOptions';
-        $this->cmd          .= ' -XX:G1NewSizePercent=20';
-        $this->cmd          .= ' -XX:G1ReservePercent=20';
-        $this->cmd          .= ' -XX:MaxGCPauseMillis=50';
-        $this->cmd          .= ' -XX:G1HeapRegionSize=16m';
-        $this->cmd          .= ' -XX:+UseG1GC';
-        $this->cmd          .= ' -XX:-UseAdaptiveSizePolicy';
-        $this->cmd          .= ' -XX:-OmitStackTraceInFastThrow';
-        $this->cmd          .= ' -XX:-DontCompileHugeMethods';
+		$this->cmd          .= ' -XX:+UnlockExperimentalVMOptions';
+		$this->cmd          .= ' -XX:G1NewSizePercent=20';
+		$this->cmd          .= ' -XX:G1ReservePercent=20';
+		$this->cmd          .= ' -XX:MaxGCPauseMillis=50';
+		$this->cmd          .= ' -XX:G1HeapRegionSize=16m';
+		$this->cmd          .= ' -XX:+UseG1GC';
+		$this->cmd          .= ' -XX:-UseAdaptiveSizePolicy';
+		$this->cmd          .= ' -XX:-OmitStackTraceInFastThrow';
+		$this->cmd          .= ' -XX:-DontCompileHugeMethods';
 		$this->json          = json_decode(file_get_contents($this->versions_json),true);
 		
 		
-        $this->username         = 'laozhi';
-        $this->uuid             = 'be2c077954673b69865a1633750d0eaa';
-        $this->token            = 'be2c077954673b69865a1633750d0eaa';
-        $this->width            = '854';
-        $this->height           = '480';
-        $this->launcher_name    = 'weiw-Launcher';
-        $this->launcher_version = '1.0.0';
-        $this->fullscreen       = false;
-        $this->server           = '';
-        $this->port             = '';
-        $this->auth_route       = '';
-        $this->auth_url         = '';
+		$this->username         = 'laozhi';
+		$this->uuid             = 'be2c077954673b69865a1633750d0eaa';
+		$this->token            = 'be2c077954673b69865a1633750d0eaa';
+		$this->width            = '854';
+		$this->height           = '480';
+		$this->launcher_name    = 'weiw-Launcher';
+		$this->launcher_version = '1.0.0';
+		$this->fullscreen       = false;
+		$this->server           = '';
+		$this->port             = '';
+		$this->auth_route       = '';
+		$this->auth_url         = '';
 	}
 	public function libraries($library_directory,$classpath_separator)
 	{
